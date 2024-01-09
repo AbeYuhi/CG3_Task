@@ -47,8 +47,6 @@ void InGameScene::Initialize() {
 	fenceHandle_ = TextureManager::Load("fence.png");
 
 	//ゲームオブジェクト
-	testParticle1_ = std::make_unique<TestParticle>(100);
-	testParticle1_->Initialize();
 
 	spriteParticle_ = std::make_unique<SpriteParticle>(100);
 	spriteParticle_->Initialize();
@@ -60,7 +58,6 @@ void InGameScene::Initialize() {
 	groundModelInfo_.Initialize();
 	groundModelInfo_.materialInfo_.material_->enableLightint = true;
 
-	float hatibunnkatu = 1.0f / 8.0f;
 	sprite_ = ObjectManager::CreateSprite();
 	spriteInfo_.Initialize();
 }
@@ -85,7 +82,6 @@ void InGameScene::Update() {
 	lightObj_->Update();
 
 	//パーティクルの更新
-	testParticle1_->Update();
 	spriteParticle_->Update();
 	planeParticle_->Update();
 

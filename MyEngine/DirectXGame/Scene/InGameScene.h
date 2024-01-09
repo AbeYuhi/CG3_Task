@@ -62,7 +62,6 @@ private:
 	uint32_t fenceHandle_;
 
 	//描画モデル
-	std::unique_ptr<TestParticle> testParticle1_;
 	std::unique_ptr<SpriteParticle> spriteParticle_;
 	std::unique_ptr<PlaneParticle> planeParticle_;
 

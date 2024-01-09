@@ -47,11 +47,6 @@ void ParticleManager::Initialize() {
 	emitterSprite_ = ObjectManager::CreateWireFrameSpriteBox();
 	emitterSpriteInfo_.Initialize(1, {1, 1});
 
-#ifdef NDEBUG
-	emitterObjInfo_.materialInfo_.isInvisible_ = true;
-	emitterSpriteInfo_.materialInfo_.isInvisible_ = true;
-#endif // NDEBUG
-
 	//パーティクルがスプライト用かどうか
 	isSpriteParticle_ = false;
 
@@ -124,6 +119,10 @@ void ParticleManager::Update() {
 }
 
 void ParticleManager::EmitterDraw() {
+
+	if (materialInfo_.isInvisible_) {
+		return;
+	}
 
 	if (isSpriteParticle_) {
 		emitterSprite_->Draw(emitterSpriteInfo_);
