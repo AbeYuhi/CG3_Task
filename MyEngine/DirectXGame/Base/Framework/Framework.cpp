@@ -1,10 +1,11 @@
 #include "Framework.h"
 
 void Framework::Initialize() {
-	//タイトルネーム
-	const wchar_t title[] = L"MyEngine";
 
 #pragma region エンジン部分
+
+	//タイトルネーム
+	const wchar_t title[] = L"LE2B_01_アベ_ユウヒ";
 
 	//ゲームウィンドウの作成
 	winApp_ = WinApp::GetInstance();
