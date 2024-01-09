@@ -159,6 +159,9 @@ copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
     <ClCompile Include="DirectXGame\GameObject\Camera\MenuCamera.cpp" />
     <ClCompile Include="DirectXGame\Manager\ObjectManager.cpp" />
     <ClCompile Include="DirectXGame\Data\SpriteItem.cpp" />
+    <ClCompile Include="DirectXGame\GameObject\Particle\Sprite\SpriteParticle.cpp" />
+    <ClCompile Include="DirectXGame\GameObject\Particle\Object\PlaneParticle.cpp" />
+    <ClCompile Include="DirectXGame\Object\WireFrameSpriteBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DirectXGame\Data\SpriteData.h" />
@@ -236,6 +239,9 @@ copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
     <ClInclude Include="DirectXGame\GameObject\Camera\GameOverCamera.h" />
     <ClInclude Include="DirectXGame\Manager\ObjectManager.h" />
     <ClInclude Include="DirectXGame\Data\SpriteItem.h" />
+    <ClInclude Include="DirectXGame\GameObject\Particle\Sprite\SpriteParticle.h" />
+    <ClInclude Include="DirectXGame\GameObject\Particle\Object\PlaneParticle.h" />
+    <ClInclude Include="DirectXGame\Object\WireFrameSpriteBox.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="External\imgui\imgui.vcxproj" />

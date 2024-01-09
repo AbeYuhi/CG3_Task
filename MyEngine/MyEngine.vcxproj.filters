@@ -97,6 +97,18 @@
     <Filter Include="ヘッダー ファイル\GameObject\Entity">
       <UniqueIdentifier>{a9726fed-d0da-4c9b-bd59-e50aa999852b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameObject\Particle\Sprite">
+      <UniqueIdentifier>{5e00bf07-81f2-4a49-a7f5-2f5a3cece41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\Particle\Object">
+      <UniqueIdentifier>{7f23deee-22e8-4512-93f0-26d930d3e08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameObject\Particle\Sprite">
+      <UniqueIdentifier>{4aee594c-781b-4beb-adb8-3b387c972ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameObject\Particle\Object">
+      <UniqueIdentifier>{c26d882f-11c0-40da-82b2-fb6c0267a994}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -269,6 +281,15 @@
     </ClCompile>
     <ClCompile Include="DirectXGame\Data\SpriteItem.cpp">
       <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXGame\GameObject\Particle\Sprite\SpriteParticle.cpp">
+      <Filter>ソース ファイル\GameObject\Particle\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXGame\GameObject\Particle\Object\PlaneParticle.cpp">
+      <Filter>ソース ファイル\GameObject\Particle\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXGame\Object\WireFrameSpriteBox.cpp">
+      <Filter>ソース ファイル\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -496,6 +517,15 @@
     </ClInclude>
     <ClInclude Include="DirectXGame\Data\SpriteItem.h">
       <Filter>ヘッダー ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXGame\GameObject\Particle\Sprite\SpriteParticle.h">
+      <Filter>ヘッダー ファイル\GameObject\Particle\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXGame\GameObject\Particle\Object\PlaneParticle.h">
+      <Filter>ヘッダー ファイル\GameObject\Particle\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXGame\Object\WireFrameSpriteBox.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
